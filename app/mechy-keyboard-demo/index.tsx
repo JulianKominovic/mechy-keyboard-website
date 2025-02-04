@@ -14,11 +14,11 @@ const MechyKeyboardDemo = () => {
         <svg
           height="1em"
           width="1em"
-          enable-background="new 0 0 85.4 85.4"
+          enableBackground="new 0 0 85.4 85.4"
           viewBox="0 0 85.4 85.4"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-rule="evenodd" fill-rule="evenodd">
+          <g clipRule="evenodd" fillRule="evenodd">
             <path
               d="m42.7 85.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7-42.7 19.1-42.7 42.7 19.1 42.7 42.7 42.7z"
               fill="#e24b41"
@@ -32,11 +32,11 @@ const MechyKeyboardDemo = () => {
         <svg
           height="1em"
           width="1em"
-          enable-background="new 0 0 85.4 85.4"
+          enableBackground="new 0 0 85.4 85.4"
           viewBox="0 0 85.4 85.4"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-rule="evenodd" fill-rule="evenodd">
+          <g clipRule="evenodd" fillRule="evenodd">
             <path
               d="m42.7 85.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7-42.7 19.1-42.7 42.7 19.1 42.7 42.7 42.7z"
               fill="#e1a73e"
@@ -50,11 +50,11 @@ const MechyKeyboardDemo = () => {
         <svg
           height="1em"
           width="1em"
-          enable-background="new 0 0 85.4 85.4"
+          enableBackground="new 0 0 85.4 85.4"
           viewBox="0 0 85.4 85.4"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-rule="evenodd" fill-rule="evenodd">
+          <g clipRule="evenodd" fillRule="evenodd">
             <path
               d="m42.7 85.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7-42.7 19.1-42.7 42.7 19.1 42.7 42.7 42.7z"
               fill="#d1d0d2"

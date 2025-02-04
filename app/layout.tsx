@@ -6,7 +6,6 @@ import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
-import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
 
 export const metadata: Metadata = {
@@ -57,38 +56,19 @@ export default function RootLayout({
       <head>
         <link
           rel="alternate"
-          type="application/rss+xml"
-          href="/rss.xml"
-          title="RSS Feed"
-        />
-        <link
-          rel="alternate"
-          type="application/atom+xml"
-          href="/atom.xml"
-          title="Atom Feed"
-        />
-        <link
-          rel="alternate"
           type="application/feed+json"
           href="/feed.json"
           title="JSON Feed"
         />
       </head>
       <body className="flex flex-col items-center justify-center mx-auto mt-2 mb-20 antialiased lg:mt-8 lg:mb-40 bg-primary-200">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <main className="flex flex-col flex-auto w-full max-w-screen-lg min-w-0 px-6 mt-2 md:mt-6 sm:px-4 md:px-0">
-            <Navbar />
-            {children}
-            <Footer />
-            <Analytics />
-            <SpeedInsights />
-          </main>
-        </ThemeProvider>
+        <main className="flex flex-col flex-auto w-full max-w-screen-lg min-w-0 px-6 mt-2 md:mt-6 sm:px-4 md:px-0">
+          <Navbar />
+          {children}
+          <Footer />
+          <Analytics />
+          <SpeedInsights />
+        </main>
       </body>
     </html>
   );

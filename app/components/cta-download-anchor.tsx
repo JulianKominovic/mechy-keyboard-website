@@ -1,6 +1,7 @@
 "use client";
 import { GHLatestVersionResponse } from "app/lib/fetch-last-version";
 import React from "react";
+import OnlyClientSide from "./only-client-side";
 
 type Props = {
   lastVersion: GHLatestVersionResponse | null;
@@ -115,38 +116,50 @@ const CtaDownloadAnchor = ({ lastVersion }: Props) => {
   const supportedOs = ["mac"];
 
   return (
-    <div className="flex flex-col items-center justify-center gap-2 mb-16">
-      <a
-        aria-disabled={commingSoon.includes(os)}
-        href={getDownloadUrl(lastVersion)}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 px-4 py-4 font-medium text-black transition-colors hover:bg-primary-900 hover:text-white rounded-2xl bg-primary-300 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed aria-disabled:pointer-events-none"
-      >
-        {os === "mac"
-          ? "Download now"
-          : os === "windows"
-          ? "Windows coming soon"
-          : os === "linux"
-          ? "Linux coming soon"
-          : "See download options"}
-        {os === "mac" ? (
-          <AppleSvg />
-        ) : os === "windows" ? (
-          <WindowsSvg />
-        ) : os === "linux" ? (
-          <LinuxSvg />
-        ) : null}
-      </a>
+    <OnlyClientSide
+      fallback={
+        <div className="flex flex-col items-center justify-center h-32 gap-2 mb-16 blur-md">
+          <div className="inline-flex items-center justify-center gap-2 px-4 font-medium text-black transition-colors h-14 hover:bg-primary-900 hover:text-white rounded-2xl bg-primary-300 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed aria-disabled:pointer-events-none">
+            Download now <WindowsSvg />
+          </div>
 
-      <p className="text-xs text-black/60">
-        {commingSoon.includes(os)
-          ? "Only available for macOS"
-          : supportedOs.includes(os)
-          ? "Windows and Linux coming soon"
-          : "Not available for your platform"}
-      </p>
-    </div>
+          <p className="text-xs text-black/60">Windows and Linux coming soon</p>
+        </div>
+      }
+    >
+      <div className="flex flex-col items-center justify-center h-32 gap-2 mb-16 animate-unblur">
+        <a
+          aria-disabled={commingSoon.includes(os)}
+          href={getDownloadUrl(lastVersion)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 px-4 font-medium text-black transition-colors h-14 hover:bg-primary-900 hover:text-white rounded-2xl bg-primary-300 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed aria-disabled:pointer-events-none"
+        >
+          {os === "mac"
+            ? "Download now"
+            : os === "windows"
+            ? "Windows coming soon"
+            : os === "linux"
+            ? "Linux coming soon"
+            : "See download options"}
+          {os === "mac" ? (
+            <AppleSvg />
+          ) : os === "windows" ? (
+            <WindowsSvg />
+          ) : os === "linux" ? (
+            <LinuxSvg />
+          ) : null}
+        </a>
+
+        <p className="text-xs text-black/60">
+          {commingSoon.includes(os)
+            ? "Only available for macOS"
+            : supportedOs.includes(os)
+            ? "Windows and Linux coming soon"
+            : "Not available for your platform"}
+        </p>
+      </div>
+    </OnlyClientSide>
   );
 };
 

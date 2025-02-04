@@ -12,6 +12,7 @@ module.exports = {
         "star-movement-bottom":
           "star-movement-bottom linear infinite alternate",
         "star-movement-top": "star-movement-top linear infinite alternate",
+        unblur: "unblur .4s ease-out",
       },
       keyframes: {
         "star-movement-bottom": {
@@ -21,6 +22,14 @@ module.exports = {
         "star-movement-top": {
           "0%": { transform: "translate(0%, 0%)", opacity: "1" },
           "100%": { transform: "translate(100%, 0%)", opacity: "0" },
+        },
+        unblur: {
+          "0%": {
+            filter: "blur(12px)",
+          },
+          "100%": {
+            filter: "blur(0px)",
+          },
         },
       },
       colors: {
