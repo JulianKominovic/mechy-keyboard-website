@@ -1,16 +1,15 @@
 export const metaData = {
-  baseUrl: "https://nextfolio-template.vercel.app/",
-  title: "Nextfolio",
-  name: "Sirius",
+  baseUrl: "https://mechy-keyboard.jkominovic.dev/",
+  title: "Mechy Keyboard",
+  name: "Julian Kominovic",
   ogImage: "/opengraph-image.png",
   description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    "Give your keyboard a voice. Simulate the sounds of typing on a mechanical keyboard. Choose from a variety of switches and keycaps and make your keyboard sound unique.",
 };
 
 export const socialLinks = {
-  twitter: "https://x.com/1tssirius",
-  github: "https://github.com/1msirius/Nextfolio",
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
-  email: "mailto:example@gmail.com",
+  twitter: "https://x.com/JulianKominovic",
+  github: "https://github.com/JulianKominovic/mechy-keyboard",
+  linkedin: "https://www.linkedin.com/in/jkominovic/",
+  email: "mailto:juliankominovic@gmail.com",
 };

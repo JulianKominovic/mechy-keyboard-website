@@ -1,0 +1,49 @@
+---
+title: "Docs"
+publishedAt: "2025-02-03"
+summary: "Mechy Keyboard Docs"
+tags: "Docs"
+---
+
+## Installation
+
+### MacOS
+
+Apple has a security feature called Gatekeeper that prevents the installation of apps from unidentified developers. If you try to open an app that is not signed by an identified developer you will get an error message.
+
+So follow these steps to install the app:
+
+1. Go to [Mechy Keyboard website](https://mechy-keyboard.jkominovic.dev).
+1. Click on the download button.
+1. Once the download is complete, go to the downloads folder.
+1. Right-click on the app and select open. You will get a warning message, click on open again. Maybe you won't see the 'open' button the first time, just close the dialog and try again.
+1. Drag the app to the Applications folder.
+1. Open the Applications folder.
+1. Right-click on the app and select open. You will get a warning message, click on open again. Maybe you won't see the 'open' button the first time, just close the dialog and try again.
+1. Open the app then [click here to go to Settings](x-apple.systempreferences:com.apple.preference.security?Input_Monitoring) or go to System Preferences > Security & Privacy then find Input Monitoring.
+1. If Mechy Keyboard is on the list, delete it and add it again. If it's not on the list, add it.
+1. Restart the app.
+1. Enjoy!
+
+### Ubuntu 24.04 (only on X11)
+
+> The app is not compatible with Wayland. If you are using Wayland, you need to switch to X11. You can do it by logging out and selecting X11 in the login screen. (google it, it's easy)
+
+1. Install prerequisites
+
+```bash
+sudo apt install libfuse2
+
+```
+
+1. Go to [Mechy Keyboard website](https://mechy-keyboard.jkominovic.dev).
+1. Click on the download button.
+1. Once the download is complete, go to the downloads folder.
+1. Install the app
+
+```bash
+# Replace the file name with the one you downloaded
+sudo apt install -i mechy-keyboard_<version>_amd64.deb
+```
+
+5. App is installed, enjoy!
