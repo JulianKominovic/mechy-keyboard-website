@@ -3,13 +3,15 @@ import CtaDownloadAnchor from "./components/cta-download-anchor";
 import fetchLastVersion from "./lib/fetch-last-version";
 import NewVersionBadge from "./components/new-version-badge";
 import SpecialThanks from "./components/special-thanks";
+import FeaturesSection from "./components/features-section";
+import DemoSection from "./components/demo-section";
 
 export default async function Page() {
   const lastVersion = await fetchLastVersion();
   return (
-    <section className="px-4">
+    <section className="px-4 overflow-x-hidden">
       <NewVersionBadge lastVersion={lastVersion} />
-      <h1 className="mb-8 font-bold tracking-tight text-center text-7xl">
+      <h1 className="mb-8 text-6xl font-bold tracking-tight text-center sm:text-7xl">
         Give your keyboard a voice.
       </h1>
       <h2 className="mb-12 text-center text-balance">
@@ -17,11 +19,12 @@ export default async function Page() {
         variety of switches and keycaps and make your keyboard sound unique.
       </h2>
       <CtaDownloadAnchor lastVersion={lastVersion} />
-
-      <MechyKeyboardDemo />
-      <small className="block mt-4 text-center text-primary-900">
+      <DemoSection />
+      {/* <MechyKeyboardDemo />
+      <small className="hidden mt-4 mb-24 text-center sm:block text-primary-900">
         Go ahead, start typing and enjoy 🤠
-      </small>
+      </small> */}
+      <FeaturesSection />
       <SpecialThanks />
     </section>
   );

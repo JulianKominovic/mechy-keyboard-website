@@ -2,6 +2,8 @@
 import { GHLatestVersionResponse } from "app/lib/fetch-last-version";
 import React from "react";
 import OnlyClientSide from "./only-client-side";
+import Link from "next/link";
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 type Props = {
   lastVersion: GHLatestVersionResponse | null;
@@ -119,6 +121,15 @@ const CtaDownloadAnchor = ({ lastVersion }: Props) => {
     <OnlyClientSide
       fallback={
         <div className="flex flex-col items-center justify-center h-32 gap-2 mb-16 blur-md">
+          <small>
+            Please 🙏, follow these{" "}
+            <Link
+              href="/docs/getting-started"
+              className="underline underline-offset-2"
+            >
+              instructions
+            </Link>
+          </small>
           <div className="inline-flex items-center justify-center gap-2 px-4 font-medium text-black transition-colors h-14 hover:bg-primary-900 hover:text-white rounded-2xl bg-primary-300 aria-disabled:opacity-50 aria-disabled:cursor-not-allowed aria-disabled:pointer-events-none">
             Download now <WindowsSvg />
           </div>
@@ -128,6 +139,16 @@ const CtaDownloadAnchor = ({ lastVersion }: Props) => {
       }
     >
       <div className="flex flex-col items-center justify-center h-32 gap-2 mb-16 animate-unblur">
+        <small>
+          Please 🙏, follow these{" "}
+          <Link
+            href="/docs/getting-started"
+            className="underline underline-offset-2"
+          >
+            instructions
+          </Link>
+        </small>
+
         <a
           aria-disabled={commingSoon.includes(os)}
           href={getDownloadUrl(lastVersion)}

@@ -53,6 +53,9 @@ export function getMDXData(dir: string) {
 export function getBlogPosts() {
   return getMDXData(path.join(process.cwd(), "content"));
 }
+export function getDocs() {
+  return getMDXData(path.join(process.cwd(), "content", "docs"));
+}
 
 export function formatDate(date: string, includeRelative = false) {
   let currentDate = new Date();

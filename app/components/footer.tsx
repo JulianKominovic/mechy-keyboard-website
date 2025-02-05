@@ -1,8 +1,12 @@
 "use client";
 
 import React from "react";
-import { FaXTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa6";
-import { TbMailFilled } from "react-icons/tb";
+import {
+  LinkedinLogo,
+  GithubLogo,
+  TwitterLogo,
+  At,
+} from "@phosphor-icons/react";
 import { metaData, socialLinks } from "app/config";
 
 const YEAR = new Date().getFullYear();
@@ -10,7 +14,7 @@ const YEAR = new Date().getFullYear();
 function SocialLink({ href, icon: Icon }) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
-      <Icon />
+      {Icon}
     </a>
   );
 }
@@ -18,10 +22,22 @@ function SocialLink({ href, icon: Icon }) {
 function SocialLinks() {
   return (
     <div className="flex mx-auto text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <SocialLink href={socialLinks.twitter} icon={FaXTwitter} />
-      <SocialLink href={socialLinks.github} icon={FaGithub} />
-      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
-      <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+      <SocialLink
+        href={socialLinks.twitter}
+        icon={<TwitterLogo weight="fill" fill="black" size={"20px"} />}
+      />
+      <SocialLink
+        href={socialLinks.github}
+        icon={<GithubLogo weight="fill" fill="black" size={"20px"} />}
+      />
+      <SocialLink
+        href={socialLinks.linkedin}
+        icon={<LinkedinLogo weight="fill" fill="black" size={"20px"} />}
+      />
+      <SocialLink
+        href={socialLinks.email}
+        icon={<At weight="fill" fill="black" size={"20px"} />}
+      />
     </div>
   );
 }

@@ -4,8 +4,8 @@ type Props = {};
 
 const SpecialThanks = (props: Props) => {
   return (
-    <div className="max-w-screen-md text-sm [&_a]:underline [&_a]:underline-offset-2 mx-auto my-16 text-black/60">
-      <h2 className="mb-2 font-medium text-black">
+    <div className="max-w-screen-md text-sm [&_li]:mb-1 [&_a]:underline [&_a]:underline-offset-2 mx-auto my-16 text-black/70">
+      <h2 className="mb-2 text-xl font-semibold text-black">
         Acknowledgments and inspiration
       </h2>
       <ul className="list-disc list-inside">

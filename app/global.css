@@ -34,8 +34,8 @@
   --sh-entity: #e25a1c;
 }
 
-html {
-  min-width: 360px;
+* {
+  text-wrap: balance;
 }
 
 .prose {

@@ -1,0 +1,24 @@
+---
+title: "Security and privacy"
+publishedAt: "2025-02-03"
+summary: "Mechy Keyboard Security and privacy"
+tags: "Security and privacy"
+---
+
+## Key listening
+
+Mechy Keyboard listens to your keyboard input to provide the features you need.
+We don't store your keystrokes for more than a few seconds. This is necessary to coordinate the sounds as you type.
+
+Here you have a chart of the data flow:
+
+[![Keypresses logic](/keypresses-logic.svg)](/keypresses-logic.svg)
+
+<small>
+Go ahead and click on the image to see it in full size. [Download to tldraw file if you want](/keypresses-logic.tldr)
+
+</small>
+
+I hope this clarifies how we handle your keypresses.
+
+[Here is the line of code that does it](https://github.com/JulianKominovic/mechy-keyboard/blob/master/src-tauri/src/main.rs#L69). I cannot promise that these lines of code will always be the same, but you can always check the source code of the app to clear any doubts you may have: [https://github.com/JulianKominovic/mechy-keyboard](https://github.com/JulianKominovic/mechy-keyboard)
