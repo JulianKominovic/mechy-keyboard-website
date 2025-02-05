@@ -1,4 +1,5 @@
-![mechy-keyboard jkominovic dev_](https://github.com/user-attachments/assets/0344c5f5-572a-49c2-b5f9-03035c82b6c2)
+
+![mechy-keyboard jkominovic dev_(Nest Hub Max)](https://github.com/user-attachments/assets/992e37ba-aeea-43cf-8abf-896e0113c4a0)
 
 # Mechy Keyboard website
 
