@@ -30,7 +30,14 @@ export function Navbar() {
               {name}
             </Link>
           ))}
-          {/* <ThemeSwitch /> */}
+          <a
+            href="/roadmap"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex align-middle transition-all hover:text-neutral-800 dark:hover:text-neutral-200"
+          >
+            Roadmap
+          </a>
         </div>
       </div>
     </nav>
