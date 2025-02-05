@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@phosphor-icons/react':
-        specifier: ^2.1.7
+        specifier: 2.1.7
         version: 2.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@types/node':
         specifier: 22.10.7
@@ -21,28 +21,28 @@ importers:
         specifier: 19.0.3
         version: 19.0.3(@types/react@19.0.7)
       '@vercel/analytics':
-        specifier: ^1.4.1
+        specifier: 1.4.1
         version: 1.4.1(next@15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
-      '@vercel/speed-insights':
-        specifier: ^1.1.0
-        version: 1.1.0(next@15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       feed:
-        specifier: ^4.2.2
+        specifier: 4.2.2
         version: 4.2.2
       geist:
         specifier: 1.3.1
         version: 1.3.1(next@15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0))
       katex:
-        specifier: ^0.16.20
+        specifier: 0.16.20
         version: 0.16.20
       next:
-        specifier: ^15.1.4
+        specifier: 15.1.4
         version: 15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       next-mdx-remote:
-        specifier: ^5.0.0
+        specifier: 5.0.0
         version: 5.0.0(@types/react@19.0.7)(acorn@8.14.0)(react@19.0.0)
       next-themes:
-        specifier: ^0.4.4
+        specifier: 0.4.4
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react:
         specifier: 19.0.0
@@ -51,44 +51,41 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
       react-rough-notation:
-        specifier: ^1.0.5
+        specifier: 1.0.5
         version: 1.0.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-tweet:
-        specifier: ^3.2.1
+        specifier: 3.2.1
         version: 3.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react-wrap-balancer:
-        specifier: ^1.1.1
+        specifier: 1.1.1
         version: 1.1.1(react@19.0.0)
       react-youtube:
-        specifier: ^10.1.0
+        specifier: 10.1.0
         version: 10.1.0(react@19.0.0)
       rehype-katex:
-        specifier: ^7.0.1
+        specifier: 7.0.1
         version: 7.0.1
       remark-math:
-        specifier: ^6.0.0
+        specifier: 6.0.0
         version: 6.0.0
       simple-icons:
-        specifier: ^14.5.0
+        specifier: 14.5.0
         version: 14.5.0
       sugar-high:
-        specifier: ^0.8.1
+        specifier: 0.8.1
         version: 0.8.1
-      tailwind-gradient-mask-image:
-        specifier: ^1.2.0
-        version: 1.2.0
       typescript:
         specifier: 5.7.3
         version: 5.7.3
     devDependencies:
       '@tailwindcss/typography':
-        specifier: ^0.5.16
+        specifier: 0.5.16
         version: 0.5.16(tailwindcss@3.4.17)
       autoprefixer:
-        specifier: ^10.4.20
+        specifier: 10.4.20
         version: 10.4.20(postcss@8.5.1)
       postcss:
-        specifier: ^8.5.1
+        specifier: 8.5.1
         version: 8.5.1
       tailwindcss:
         specifier: 3.4.17
@@ -392,29 +389,6 @@ packages:
     peerDependenciesMeta:
       '@remix-run/react':
         optional: true
-      '@sveltejs/kit':
-        optional: true
-      next:
-        optional: true
-      react:
-        optional: true
-      svelte:
-        optional: true
-      vue:
-        optional: true
-      vue-router:
-        optional: true
-
-  '@vercel/speed-insights@1.1.0':
-    resolution: {integrity: sha512-rAXxuhhO4mlRGC9noa5F7HLMtGg8YF1zAN6Pjd1Ny4pII4cerhtwSG4vympbCl+pWkH7nBS9kVXRD4FAn54dlg==}
-    peerDependencies:
-      '@sveltejs/kit': ^1 || ^2
-      next: '>= 13'
-      react: ^18 || ^19 || ^19.0.0-rc
-      svelte: '>= 4'
-      vue: ^3
-      vue-router: ^4
-    peerDependenciesMeta:
       '@sveltejs/kit':
         optional: true
       next:
@@ -1327,9 +1301,6 @@ packages:
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  tailwind-gradient-mask-image@1.2.0:
-    resolution: {integrity: sha512-tUJaGhvqbJFiVKJu6EU5n//KvGdVvY3L3VOFNqjztk13+ifAk00pcSNHBTgHfUiBGOEzDn0gFRbSmsftUV1lXA==}
-
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
     engines: {node: '>=14.0.0'}
@@ -1720,11 +1691,6 @@ snapshots:
   '@ungap/structured-clone@1.2.1': {}
 
   '@vercel/analytics@1.4.1(next@15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
-    optionalDependencies:
-      next: 15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      react: 19.0.0
-
-  '@vercel/speed-insights@1.1.0(next@15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
     optionalDependencies:
       next: 15.1.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
@@ -2927,8 +2893,6 @@ snapshots:
       dequal: 2.0.3
       react: 19.0.0
       use-sync-external-store: 1.4.0(react@19.0.0)
-
-  tailwind-gradient-mask-image@1.2.0: {}
 
   tailwindcss@3.4.17:
     dependencies:
